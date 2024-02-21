@@ -4,7 +4,7 @@ function PageIntegration() {
   const [integrated, setIntegrated] = useState(false);
   return (
     <div className="bg-blue-800 min-h-screen flex flex-col items-center justify-center">
-      {integrated ? (
+      {!integrated ? (
         <div className="p-5 flex flex-col items-center justify-center min-w-96 bg-white min-h-32 rounded-lg">
           <h3 className="text-center">Facebook page integration</h3>
           <button className="bg-blue-800 text-white p-2 my-5 rounded block w-full hover:bg-black">
