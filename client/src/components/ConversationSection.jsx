@@ -1,7 +1,11 @@
 import React from "react";
 import MessageItem from "./MessageItem";
+import { useState } from "react";
 
 function ConversationSection(){
+    
+  const [selected, setSelected] = useState(null);
+
     return (
         <div className="flex flex-col w-1/6 gap-1">
         <div className="p-3 bg-white h-14">

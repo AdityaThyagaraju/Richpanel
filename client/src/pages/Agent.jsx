@@ -8,7 +8,6 @@ import ProfileSection from "../components/ProfileSection";
 import ConversationSection from "../components/ConversationSection";
 
 function Agent() {
-  const [selected, setSelected] = useState(null);
 
   return (
     <div className="flex h-screen bg-gray-200 gap-1">
