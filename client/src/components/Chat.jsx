@@ -5,12 +5,26 @@ function Chat({ align, message, image, timestamp }) {
     <div className={`flex justify-${align}`}>
       <div className="max-w-64 mt-3">
         <div className="flex">
-          {align == "start" ? <div className="w-10 h-10 flex justify-center mx-2 p-1">{image}</div> : null}
+          {align == "start" ? (
+            <div className="w-10 h-10 flex justify-center mx-2 p-1">
+              {image}
+            </div>
+          ) : null}
           <div>
-          <div className="bg-white p-2 px-5 rounded">{message}</div>
-          <div className={`mt-1 text-xs ms-1 text-${align=="start"?'left':'right'}`}>{timestamp}</div>
+            <div className="bg-white p-2 px-5 rounded">{message}</div>
+            <div
+              className={`mt-1 text-xs ms-1 text-${
+                align == "start" ? "left" : "right"
+              }`}
+            >
+              {timestamp}
+            </div>
           </div>
-          {align == "end" ? <div className="w-10 h-10 flex justify-center mx-2 p-1">{image}</div> : null}
+          {align == "end" ? (
+            <div className="w-10 h-10 flex justify-center mx-2 p-1">
+              {image}
+            </div>
+          ) : null}
         </div>
       </div>
     </div>

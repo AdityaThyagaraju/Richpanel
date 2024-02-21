@@ -8,10 +8,10 @@ import Agent from "./pages/Agent";
 
 function App() {
   const [user, setUser] = useState(null);
-  
+
   return (
     <div className="text-gray-700">
-      <UserContext.Provider value={{user,setUser}}>
+      <UserContext.Provider value={{ user, setUser }}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Login />}></Route>
