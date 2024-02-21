@@ -20,7 +20,7 @@ function Login() {
     const savedUser = savedUserResponse.json();
     if (savedUser) {
       setUser(savedUser);
-      navigate("/Agent");
+      navigate("/Integrate");
     }
   }
 

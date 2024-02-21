@@ -22,7 +22,7 @@ function Signup() {
     const savedUser = savedUserResponse.json();
     if (savedUser) {
       setUser(savedUser);
-      navigate("/Agent");
+      navigate("/Integrate");
     }
   }
   return (
